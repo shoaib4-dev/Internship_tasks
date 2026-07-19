@@ -1,0 +1,87 @@
+/* Google Font import kr rhay hain modern look k liye */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* Light modern grey background */
+    color: #1e293b; /* Dark slate text */
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+/* Container wrapper */
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* List/Grid Container */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Card item styling */
+li {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Card links styling */
+li a {
+    display: block;
+    padding: 1.75rem;
+    text-decoration: none;
+    color: #334155;
+    font-weight: 600;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+/* Description text inside card (optional) */
+li a span {
+    display: block;
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+/* Hover effects (Jab mouse upar aay ga) */
+li:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6; /* Modern Blue border */
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1), 0 4px 6px -4px rgba(59, 130, 246, 0.1);
+}
+
+li:hover a {
+    color: #3b82f6;
+}
