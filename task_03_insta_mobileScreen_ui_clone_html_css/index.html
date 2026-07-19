@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta UI Clone</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- For Mobile view:Width is locked and height is 100% -->
+        <div class="screen-canvas">
+            
+            <!-- SCREEN 1: HOME FEED  -->
+            <div id="feed-screen" class="screen-wrapper active">
+                <header class="app-header home-header">
+                    <div class="header-left-action">
+                        <img src="assets/img/create.png" alt="Create Icon" class="header-icon">
+                    </div>
+                    <div class="header-logo-center">
+                        <img src="assets/img/instagram_logo.png" alt="Instagram Logo Text" class="logo-img">
+                    </div>
+                    <div class="header-right-action">
+                        <img src="assets/img/notifications.png" alt="Notifications Icon" class="header-icon">
+                    </div>
+                </header>
+
+                <main class="screen-content">
+                    <!-- Stories Horizontal Bar -->
+                    <div class="stories-container">
+                        <div class="story-item">
+                            <div class="story-avatar-container">
+                                <div class="story-avatar self-avatar"></div>
+                                <div class="add-story-badge">+</div>
+                            </div>
+                            <span class="story-username">Your story</span>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-avatar-container ring-active">
+                                <div class="story-avatar content-avatar-1"></div>
+                            </div>
+                            <span class="story-username">A-Story</span>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-avatar-container ring-active">
+                                <div class="story-avatar content-avatar-2"></div>
+                            </div>
+                            <span class="story-username">B-Story</span>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-avatar-container ring-active">
+                                <div class="story-avatar content-avatar-3"></div>
+                            </div>
+                            <span class="story-username">C-Story</span>
+                        </div>
+                    </div>
+
+                    <!-- Main Feed Post -->
+                    <article class="feed-post">
+                        <div class="post-header">
+                            <div class="post-user-info">
+                                <div class="post-avatar"></div>
+                                <div class="post-meta">
+                                    <h4 class="username-title">Name of Post Uploader</h4>
+                                    <span class="location-text">CityName Country شہرکانام ملک کا نام</span>
+                                </div>
+                            </div>
+                            <button class="post-options-btn">
+                                <img src="assets/img/more.png" alt="More Options" class="small-icon">
+                            </button>
+                        </div>
+
+                        <div class="post-image-wrapper">
+                            <div class="mock-post-image"></div>
+                        </div>
+
+                        <div class="post-actions">
+                            <div class="actions-left">
+                                <div class="action-item">
+                                    <img src="assets/img/heart.png" alt="Like" class="action-icon">
+                                    <span class="action-count">X</span>
+                                </div>
+                                <div class="action-item">
+                                    <img src="assets/img/comment.png" alt="Comment" class="action-icon">
+                                    <span class="action-count">Y</span>
+                                </div>
+                                <div class="action-item">
+                                    <img src="assets/img/share.png" alt="Share" class="action-icon">
+                                </div>
+                            </div>
+                            <div class="actions-right">
+                                <img src="assets/img/bookmark.png" alt="Save" class="action-icon">
+                            </div>
+                        </div>
+
+                        <div class="post-details">
+                            <span class="timestamp-text">xx minutes ago</span>
+                        </div>
+                    </article>
+                </main>
+            </div>
+
+            <!-- SCREEN 2: EXPLORE  -->
+            <div id="explore-screen" class="screen-wrapper">
+                <header class="explore-header">
+                    <div class="search-bar-container">
+                        <img src="assets/img/search_gray.png" alt="Search Icon" class="search-lens-icon">
+                        <input type="text" placeholder="Search with Meta AI" class="search-input" readonly>
+                        <img src="assets/img/meta_ai.png" alt="Meta AI Icon" class="search-right-icon">
+                    </div>
+                </header>
+
+                <div class="tags-filter-bar">
+                    <div class="filter-badge active">For you</div>
+                    <div class="filter-badge plus-badge"><img src="assets/img/plus_small.png" alt="Plus Icon"></div>
+                    <div class="filter-badge">Explore Topic A</div>
+                    <div class="filter-badge">Explore Topic B</div>
+                </div>
+
+                <main class="screen-content">
+                    <div class="explore-grid">
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                        <div class="grid-item"><span class="views-tag"><img src="assets/img/view_eye.png" alt="" class="mini-eye"> xx views</span></div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- SCREEN 3: PROFILE  -->
+            <div id="profile-screen" class="screen-wrapper">
+                <!-- Profile Top Header Bar matched with references -->
+                <header class="profile-header">
+                    <div class="profile-header-left">
+                        <img src="assets/img/create.png" alt="Create" class="header-icon">
+                        <span class="notification-dot-red"></span>
+                    </div>
+                    <div class="header-center-username">
+                        <span class="username-text">Username</span>
+                        <img src="assets/img/dropdown_arrow.png" alt="" class="dropdown-icon">
+                        <span class="notification-dot-red inline-dot"></span>
+                    </div>
+                    <div class="profile-header-right">
+                        <img src="assets/img/threads_icon.png" alt="Threads" class="header-icon">
+                        <img src="assets/img/burger_menu.png" alt="Settings Menu" class="header-icon">
+                    </div>
+                </header>
+
+                <main class="screen-content">
+                    <!-- Top section layout: Avatar & Counters Side-by-Side -->
+                    <div class="profile-meta-info">
+                        <div class="profile-pic-area">
+                            <div class="music-tag-bubble">Try sharing a song...</div>
+                            <div class="profile-circle-border">
+                                <div class="profile-avatar-main"></div>
+                            </div>
+                            <div class="add-story-badge profile-add-badge">+</div>
+                        </div>
+                        <div class="profile-counters">
+                            <div class="counter-box"><span class="counter-num">X</span><span class="counter-label">posts</span></div>
+                            <div class="counter-box"><span class="counter-num">Y</span><span class="counter-label">followers</span></div>
+                            <div class="counter-box"><span class="counter-num">Z</span><span class="counter-label">following</span></div>
+                        </div>
+                    </div>
+
+                    <!-- User Information Info Blocks (Moved right underneath metrics) -->
+                    <div class="user-bio-block">
+                        <h3 class="user-display-name">Name</h3>
+                        <div class="bio-badges-row">
+                            <div class="threads-badge">
+                                <img src="assets/img/threads_mini.png" alt="" class="mini-threads-logo">
+                                <span>Username</span>
+                            </div>
+                            <button class="add-button">+ Add</button>
+                        </div>
+                    </div>
+
+                    <!-- Profile Screen Action Buttons -->
+                    <div class="profile-action-buttons">
+                        <button class="action-btn">Edit profile</button>
+                        <button class="action-btn">Share profile</button>
+                        <button class="action-btn icon-btn">
+                            <img src="assets/img/add_friend.png" alt="Add Friends">
+                        </button>
+                    </div>
+
+                    <!-- Discover Carousel Component Area -->
+                    <div class="discover-section">
+                        <div class="discover-header">
+                            <span class="discover-title">Discover people</span>
+                            <span class="see-all-link">See All</span>
+                        </div>
+                        <div class="discover-slider">
+                            <div class="discover-card">
+                                <button class="card-close-btn">×</button>
+                                <div class="card-avatar"></div>
+                                <h5 class="card-name">Suggested User A</h5>
+                                <span class="card-subtext">Suggested for you</span>
+                                <button class="follow-btn">Follow</button>
+                            </div>
+                            <div class="discover-card">
+                                <button class="card-close-btn">×</button>
+                                <div class="card-avatar"></div>
+                                <h5 class="card-name">Suggested User B</h5>
+                                <span class="card-subtext">Suggested for you</span>
+                                <button class="follow-btn">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Structural Display Tabs -->
+                    <div class="profile-layout-tabs">
+                        <div class="tab-item active">
+                            <img src="assets/img/grid_posts.png" alt="" class="tab-icon">
+                        </div>
+                        <div class="tab-item">
+                            <img src="assets/img/reels_tab.png" alt="" class="tab-icon">
+                        </div>
+                        <div class="tab-item">
+                            <img src="assets/img/tagged_posts.png" alt="" class="tab-icon">
+                        </div>
+                    </div>
+
+                    <!-- Profile Empty View State -->
+                    <div class="empty-feed-area">
+                        <h2 class="empty-title">Create your first post</h2>
+                        <p class="empty-desc">Make this space your own.</p>
+                    </div>
+                </main>
+            </div>
+
+            <!-- GLOBAL NAVIGATION BOTTOM-->
+            <nav class="bottom-nav-bar">
+                <div class="nav-btn" data-target="feed-screen">
+                    <img src="assets/img/nav_home.png" alt="" class="nav-img-icon active">
+                </div>
+                <div class="nav-btn"><img src="assets/img/nav_create.png" alt="" class="nav-img-icon"></div>
+                <div class="nav-btn"><img src="assets/img/nav_reels.png" alt="" class="nav-img-icon"></div>
+                <div class="nav-btn" data-target="explore-screen">
+                    <img src="assets/img/nav_search.png" alt="" class="nav-img-icon">
+                </div>
+                <div class="nav-btn" data-target="profile-screen">
+                    <div class="profile-nav-ring"><div class="nav-profile-pic"></div></div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <script>
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const screens = document.querySelectorAll('.screen-wrapper');
+
+        navButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetId = btn.getAttribute('data-target');
+                if (targetId) {
+                    screens.forEach(s => s.classList.remove('active'));
+                    document.getElementById(targetId).classList.add('active');
+                    
+                    document.querySelectorAll('.nav-img-icon').forEach(icon => icon.classList.remove('active'));
+                    const innerImg = btn.querySelector('.nav-img-icon');
+                    if (innerImg) innerImg.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
