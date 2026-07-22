@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Winter Portfolio - Photography Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- navbar -->
+<nav>
+    <div class="nav-container">
+        <a href="#home" class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2v20M2 12h20M6 6l12 12M6 18L18 6"></path>
+                <circle cx="12" cy="12" r="2"></circle>
+                <circle cx="12" cy="2" r="1.5"></circle>
+                <circle cx="12" cy="22" r="1.5"></circle>
+                <circle cx="2" cy="12" r="1.5"></circle>
+                <circle cx="22" cy="12" r="1.5"></circle>
+                <circle cx="6" cy="6" r="1.5"></circle>
+                <circle cx="18" cy="18" r="1.5"></circle>
+                <circle cx="6" cy="18" r="1.5"></circle>
+                <circle cx="18" cy="6" r="1.5"></circle>
+            </svg>
+            WINTER
+        </a>
+
+        <!-- checkbox for mobile menu-->
+        <input type="checkbox" id="navToggle" class="nav-toggle" hidden>
+        <label for="navToggle" class="mobile-menu-btn">☰</label>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- hero banner -->
+<section class="hero" id="home">
+
+    <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+        <h1>Winter Moments</h1>
+        <p>A Collection of Frozen Beauty</p>
+    </div>
+</section>
+
+<!-- filter using radio inputs, css handles show/hide -->
+<section class="filter-container">
+    <input type="radio" name="filter" id="f-all" class="filter-input" checked hidden>
+    <input type="radio" name="filter" id="f-landscapes" class="filter-input" hidden>
+    <input type="radio" name="filter" id="f-decorations" class="filter-input" hidden>
+    <input type="radio" name="filter" id="f-food" class="filter-input" hidden>
+    <input type="radio" name="filter" id="f-family" class="filter-input" hidden>
+
+    <div class="filter-buttons">
+        <label for="f-all" class="filter-btn">All</label>
+        <label for="f-landscapes" class="filter-btn">Landscapes</label>
+        <label for="f-decorations" class="filter-btn">Decorations</label>
+        <label for="f-food" class="filter-btn">Food</label>
+        <label for="f-family" class="filter-btn">Family</label>
+    </div>
+</section>
+
+<!-- gallery grid -->
+<section class="gallery-container" id="gallery">
+    <div class="gallery-grid" id="galleryGrid">
+
+        <div class="gallery-item tall" data-category="landscapes">
+            <img src="images/photo-7.jpg" alt="Mountain Snow">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Mountain Snow</h3>
+                <p class="gallery-category">Landscapes</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+            <img src="images/photo-10.jpg" alt="Ornament Detail">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Ornament Detail</h3>
+                <p class="gallery-category">Decorations</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+            <img src="images/photo-1.jpg" alt="Winter Warmth">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Winter Warmth</h3>
+                <p class="gallery-category">Food</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+            <img src="images/photo-8.jpg" alt="Frozen Lake">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Frozen Lake</h3>
+                <p class="gallery-category">Landscapes</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="family">
+            <img src="images/photo-9.jpg" alt="Family Joy">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Family Joy</h3>
+                <p class="gallery-category">Family</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+            <img src="images/photo-2.jpg" alt="Holiday Lights">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Holiday Lights</h3>
+                <p class="gallery-category">Decorations</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+            <img src="images/photo-13.jpg" alt="Festive Treats">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Festive Treats</h3>
+                <p class="gallery-category">Food</p>
+            </div>
+        </div>
+
+        <div class="gallery-item tall" data-category="landscapes">
+            <img src="images/photo-6.jpg" alt="Winter Forest">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Winter Forest</h3>
+                <p class="gallery-category">Landscapes</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="family">
+            <img src="images/photo-3.jpg" alt="Winter Together">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Winter Together</h3>
+                <p class="gallery-category">Family</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorations">
+            <img src="images/photo-11.jpg" alt="Gift Wrapping">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Gift Wrapping</h3>
+                <p class="gallery-category">Decorations</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="landscapes">
+            <img src="images/photo-5.jpg" alt="Snowy Path">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Snowy Path</h3>
+                <p class="gallery-category">Landscapes</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" data-category="food">
+            <img src="images/photo-12.jpg" alt="Cozy Drinks">
+            <div class="gallery-overlay">
+                <h3 class="gallery-title">Cozy Drinks</h3>
+                <p class="gallery-category">Food</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- about section -->
+<section class="about-section" id="about">
+    <h2>About</h2>
+    <div class="about-content">
+        <div class="about-text">
+            <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph tells a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during the coldest months.</p>
+            <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the fleeting magic of winter&mdash;the way light dances on ice crystals, the cozy comfort of holiday gatherings, and the breathtaking landscapes transformed by snow.</p>
+            <p>My photography has been featured in various publications and exhibitions, and I continue to explore new ways to capture the essence of winter's wonder.</p>
+        </div>
+        <div>
+            <div class="about-image">
+                <img src="images/photo-4.jpg" alt="Photographer">
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Photos Captured</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact form, not hooked to backend yet -->
+<section class="contact-section" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Let's work together to capture your winter moments</p>
+
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <span>&#128231;</span>
+            <a href="mailto:hello@winterportfolio.com">hello@winterportfolio.com</a>
+        </div>
+        <div class="contact-item">
+            <span>&#128241;</span>
+            <a href="tel:+15551234567">+1 (555) 123-4567</a>
+        </div>
+        <div class="contact-item">
+            <span>&#128205;</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Colorado+USA" target="_blank">Colorado, USA</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Winter Portfolio &bull; Designed by Tooplate</p>
+</footer>
+
+</body>
+</html>
