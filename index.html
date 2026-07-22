@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Internship Dashboard</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>My Internship Tasks Dashboard</h1>
-    <ul>
-        <!-- Ab GitHub Pages is path ko araam se samajh le ga -->
-        <li><a href="./task_01_html_css/index.html">Task 01 - Learnt HTML, CSS - created sample website clone</a></li>
-        <li><a href="./task_02_html_css_flexbox/index.html">Task 02 - Learnt CSS Flexbox - created sample website clone</a></li>
-        <li><a href="./task_03_insta_mobileScreen_ui_clone_html_css/index.html">Task 03 - Learnt CSS Grid Layout - created insta mobileScreen-ui clone</a></li>
-        <li><a href="./task_04_html_css_responsive_web_clone/index.html">Task 04 - Learnt Responsive Website Design - created website (for Desktop, Mobile, Tablet)</a></li>
-    </ul>
+
+    <!-- Full width banner image, fits at the very top -->
+    <div class="banner-wrapper">
+        <img src="./banner.png" alt="Fentix Tech - Web Development Internship Tasks" class="banner-img">
+    </div>
+
+    <main class="dashboard-container">
+
+        <!-- Task Cards Grid -->
+        <ul class="task-grid">
+            <li class="task-card" style="--delay: 1">
+                <a href="./task_01_html_css/index.html">
+                    <span class="badge">Task 01</span>
+                    <h2>HTML &amp; CSS Basics</h2>
+                    <span class="description">Learnt core HTML/CSS structure and created a sample website clone.</span>
+                </a>
+            </li>
+
+            <li class="task-card" style="--delay: 2">
+                <a href="./task_02_html_css_flexbox/index.html">
+                    <span class="badge">Task 02</span>
+                    <h2>CSS Flexbox Layout</h2>
+                    <span class="description">Mastered Flexbox alignment and built a flexible website layout clone.</span>
+                </a>
+            </li>
+
+            <li class="task-card" style="--delay: 3">
+                <a href="./task_03_insta_mobileScreen_ui_clone_html_css/index.html">
+                    <span class="badge">Task 03</span>
+                    <h2>CSS Grid Layout</h2>
+                    <span class="description">Learnt CSS Grid system to build an Instagram mobile screen UI clone.</span>
+                </a>
+            </li>
+
+            <li class="task-card" style="--delay: 4">
+                <a href="./task_04_html_css_responsive_web_clone/index.html">
+                    <span class="badge">Task 04</span>
+                    <h2>Responsive Web Design</h2>
+                    <span class="description">Built a fully responsive layout tailored for Desktop, Mobile, &amp; Tablet.</span>
+                </a>
+            </li>
+        </ul>
+
+
+    </main>
+
 </body>
+</html>
